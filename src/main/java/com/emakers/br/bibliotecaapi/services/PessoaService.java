@@ -29,12 +29,6 @@ public class PessoaService {
         return new PessoaResponseDTO(pessoa);
     }
 
-    public PessoaResponseDTO createPessoa(PessoaRequestDTO pessoaRequestDTO) {
-        Pessoa pessoa = new Pessoa(pessoaRequestDTO);
-        pessoaRepository.save(pessoa);
-        return new PessoaResponseDTO(pessoa);
-    }
-
     public PessoaResponseDTO updatePessoa(Long idPessoa, PessoaRequestDTO pessoaRequestDTO) {
         Pessoa pessoa = findPessoaEntityById(idPessoa);
 

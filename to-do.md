@@ -35,7 +35,7 @@
 
 - Migração SQL [x]
 
-- Documentação [ ]
+- Documentação [x]
 
-- Spring Security [ ]
+- Spring Security [x]
 

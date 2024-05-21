@@ -19,6 +19,7 @@ public class Pessoa {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_pessoa", nullable = false)
     private Long idPessoa;
 
     @Column(name = "nome", nullable = false, length = 80)
@@ -26,6 +27,9 @@ public class Pessoa {
 
     @Column(name = "cep", nullable = false, length = 9)
     private String cep;
+
+    @OneToOne(mappedBy = "pessoa", cascade = CascadeType.ALL)
+    private PessoaAutenticada pessoaAutenticada;
 
     @ManyToMany()
     @JoinTable(

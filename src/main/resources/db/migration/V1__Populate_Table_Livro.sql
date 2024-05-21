@@ -1,4 +1,4 @@
-INSERT INTO Livro (nome, autor, quantidade, data_lancamento)
+INSERT INTO livro (nome, autor, quantidade, data_lancamento)
 VALUES
     ('Dom Quixote', 'Miguel de Cervantes', 10, '1605-01-01'),
     ('1984', 'George Orwell', 8, '1949-06-08'),
