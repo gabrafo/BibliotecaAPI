@@ -1,15 +1,15 @@
 package com.emakers.br.bibliotecaapi.services;
 
-import com.emakers.br.bibliotecaapi.data.dto.request.LivroRequestDTO;
-import com.emakers.br.bibliotecaapi.data.dto.response.LivroResponseDTO;
-import com.emakers.br.bibliotecaapi.data.entities.Livro;
-import com.emakers.br.bibliotecaapi.data.entities.Pessoa;
+import com.emakers.br.bibliotecaapi.domain.dto.request.LivroRequestDTO;
+import com.emakers.br.bibliotecaapi.domain.dto.response.LivroResponseDTO;
+import com.emakers.br.bibliotecaapi.domain.entities.Livro;
+import com.emakers.br.bibliotecaapi.domain.entities.Pessoa;
 import com.emakers.br.bibliotecaapi.exceptions.general.EntityNotFoundException;
 import com.emakers.br.bibliotecaapi.exceptions.general.InvalidOperationException;
 import com.emakers.br.bibliotecaapi.exceptions.livro.InvalidLoanException;
 import com.emakers.br.bibliotecaapi.exceptions.livro.InvalidQuantityException;
-import com.emakers.br.bibliotecaapi.repository.LivroRepository;
-import com.emakers.br.bibliotecaapi.repository.PessoaRepository;
+import com.emakers.br.bibliotecaapi.repositories.LivroRepository;
+import com.emakers.br.bibliotecaapi.repositories.PessoaRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

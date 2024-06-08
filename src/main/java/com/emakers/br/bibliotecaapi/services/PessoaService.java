@@ -1,11 +1,11 @@
 package com.emakers.br.bibliotecaapi.services;
 
-import com.emakers.br.bibliotecaapi.data.dto.request.PessoaRequestDTO;
-import com.emakers.br.bibliotecaapi.data.dto.response.PessoaResponseDTO;
-import com.emakers.br.bibliotecaapi.data.entities.Pessoa;
+import com.emakers.br.bibliotecaapi.domain.dto.request.PessoaRequestDTO;
+import com.emakers.br.bibliotecaapi.domain.dto.response.PessoaResponseDTO;
+import com.emakers.br.bibliotecaapi.domain.entities.Pessoa;
 import com.emakers.br.bibliotecaapi.exceptions.general.EntityNotFoundException;
 import com.emakers.br.bibliotecaapi.exceptions.general.InvalidOperationException;
-import com.emakers.br.bibliotecaapi.repository.PessoaRepository;
+import com.emakers.br.bibliotecaapi.repositories.PessoaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

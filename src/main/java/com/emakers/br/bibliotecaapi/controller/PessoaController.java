@@ -1,7 +1,7 @@
 package com.emakers.br.bibliotecaapi.controller;
 
-import com.emakers.br.bibliotecaapi.data.dto.request.PessoaRequestDTO;
-import com.emakers.br.bibliotecaapi.data.dto.response.PessoaResponseDTO;
+import com.emakers.br.bibliotecaapi.domain.dto.request.PessoaRequestDTO;
+import com.emakers.br.bibliotecaapi.domain.dto.response.PessoaResponseDTO;
 import com.emakers.br.bibliotecaapi.services.PessoaService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;

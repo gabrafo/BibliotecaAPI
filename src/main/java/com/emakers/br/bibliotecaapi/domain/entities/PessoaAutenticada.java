@@ -1,6 +1,6 @@
-package com.emakers.br.bibliotecaapi.data.entities;
+package com.emakers.br.bibliotecaapi.domain.entities;
 
-import com.emakers.br.bibliotecaapi.data.enums.PessoaAutenticadaRole;
+import com.emakers.br.bibliotecaapi.domain.enums.PessoaAutenticadaRole;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

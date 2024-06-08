@@ -1,4 +1,4 @@
-package com.emakers.br.bibliotecaapi.data.enums;
+package com.emakers.br.bibliotecaapi.domain.enums;
 
 public enum PessoaAutenticadaRole {
     ADMIN("admin"),

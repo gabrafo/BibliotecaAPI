@@ -1,6 +1,6 @@
-package com.emakers.br.bibliotecaapi.data.entities;
+package com.emakers.br.bibliotecaapi.domain.entities;
 
-import com.emakers.br.bibliotecaapi.data.dto.request.PessoaRequestDTO;
+import com.emakers.br.bibliotecaapi.domain.dto.request.PessoaRequestDTO;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;

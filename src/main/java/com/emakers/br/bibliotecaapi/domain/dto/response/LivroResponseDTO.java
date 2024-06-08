@@ -1,7 +1,7 @@
-package com.emakers.br.bibliotecaapi.data.dto.response;
+package com.emakers.br.bibliotecaapi.domain.dto.response;
 
-import com.emakers.br.bibliotecaapi.data.entities.Livro;
-import com.emakers.br.bibliotecaapi.data.entities.Pessoa;
+import com.emakers.br.bibliotecaapi.domain.entities.Livro;
+import com.emakers.br.bibliotecaapi.domain.entities.Pessoa;
 
 import java.sql.Date;
 import java.util.List;

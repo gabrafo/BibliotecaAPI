@@ -1,6 +1,6 @@
-package com.emakers.br.bibliotecaapi.data.dto.response;
+package com.emakers.br.bibliotecaapi.domain.dto.response;
 
-import com.emakers.br.bibliotecaapi.data.entities.Pessoa;
+import com.emakers.br.bibliotecaapi.domain.entities.Pessoa;
 
 public record PessoaResponseDTO(
 

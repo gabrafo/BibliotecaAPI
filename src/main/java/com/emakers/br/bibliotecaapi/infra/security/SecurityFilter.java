@@ -1,5 +1,5 @@
 package com.emakers.br.bibliotecaapi.infra.security;
-import com.emakers.br.bibliotecaapi.repository.PessoaAutenticadaRepository;
+import com.emakers.br.bibliotecaapi.repositories.PessoaAutenticadaRepository;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

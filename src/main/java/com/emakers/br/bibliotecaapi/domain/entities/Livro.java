@@ -1,6 +1,6 @@
-package com.emakers.br.bibliotecaapi.data.entities;
+package com.emakers.br.bibliotecaapi.domain.entities;
 
-import com.emakers.br.bibliotecaapi.data.dto.request.LivroRequestDTO;
+import com.emakers.br.bibliotecaapi.domain.dto.request.LivroRequestDTO;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
@@ -43,5 +43,12 @@ public class Livro {
         this.autor = request.autor();
         this.quantidade = request.quantidade();
         this.dataLancamento = request.dataLancamento();
+    }
+
+    public Livro(String nome, String autor, Integer quantidade, Date dataLancamento) {
+        this.nome = nome;
+        this.autor = autor;
+        this.quantidade = quantidade;
+        this.dataLancamento = dataLancamento;
     }
 }

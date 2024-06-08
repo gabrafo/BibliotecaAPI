@@ -1,6 +1,6 @@
 package com.emakers.br.bibliotecaapi.services;
 
-import com.emakers.br.bibliotecaapi.repository.PessoaAutenticadaRepository;
+import com.emakers.br.bibliotecaapi.repositories.PessoaAutenticadaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

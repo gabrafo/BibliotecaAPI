@@ -1,4 +1,4 @@
-package com.emakers.br.bibliotecaapi.data.dto.response;
+package com.emakers.br.bibliotecaapi.domain.dto.response;
 
 public record PessoaAutenticadaResponseDTO(String token) {
 }

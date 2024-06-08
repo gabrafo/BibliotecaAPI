@@ -1,13 +1,13 @@
 package com.emakers.br.bibliotecaapi.controller;
 
-import com.emakers.br.bibliotecaapi.data.dto.request.PessoaRequestDTO;
-import com.emakers.br.bibliotecaapi.data.entities.Pessoa;
+import com.emakers.br.bibliotecaapi.domain.dto.request.PessoaRequestDTO;
+import com.emakers.br.bibliotecaapi.domain.entities.Pessoa;
 import com.emakers.br.bibliotecaapi.infra.security.TokenService;
-import com.emakers.br.bibliotecaapi.data.dto.request.PessoaAutenticadaRequestDTO;
-import com.emakers.br.bibliotecaapi.data.dto.response.PessoaAutenticadaResponseDTO;
-import com.emakers.br.bibliotecaapi.data.entities.PessoaAutenticada;
-import com.emakers.br.bibliotecaapi.repository.PessoaAutenticadaRepository;
-import com.emakers.br.bibliotecaapi.repository.PessoaRepository;
+import com.emakers.br.bibliotecaapi.domain.dto.request.PessoaAutenticadaRequestDTO;
+import com.emakers.br.bibliotecaapi.domain.dto.response.PessoaAutenticadaResponseDTO;
+import com.emakers.br.bibliotecaapi.domain.entities.PessoaAutenticada;
+import com.emakers.br.bibliotecaapi.repositories.PessoaAutenticadaRepository;
+import com.emakers.br.bibliotecaapi.repositories.PessoaRepository;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;

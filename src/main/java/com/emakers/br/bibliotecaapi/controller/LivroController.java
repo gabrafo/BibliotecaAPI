@@ -1,8 +1,8 @@
 package com.emakers.br.bibliotecaapi.controller;
 
-import com.emakers.br.bibliotecaapi.data.dto.request.LivroRequestDTO;
-import com.emakers.br.bibliotecaapi.data.dto.request.EmprestimoRequestDTO;
-import com.emakers.br.bibliotecaapi.data.dto.response.LivroResponseDTO;
+import com.emakers.br.bibliotecaapi.domain.dto.request.LivroRequestDTO;
+import com.emakers.br.bibliotecaapi.domain.dto.request.EmprestimoRequestDTO;
+import com.emakers.br.bibliotecaapi.domain.dto.response.LivroResponseDTO;
 import com.emakers.br.bibliotecaapi.services.LivroService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;

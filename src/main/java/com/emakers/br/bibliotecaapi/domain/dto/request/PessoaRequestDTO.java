@@ -1,6 +1,6 @@
-package com.emakers.br.bibliotecaapi.data.dto.request;
+package com.emakers.br.bibliotecaapi.domain.dto.request;
 
-import com.emakers.br.bibliotecaapi.data.enums.PessoaAutenticadaRole;
+import com.emakers.br.bibliotecaapi.domain.enums.PessoaAutenticadaRole;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
