@@ -42,7 +42,7 @@ public class LivroService {
         if(livroRequestDTO.quantidade()<0) throw new InvalidQuantityException();
 
         Livro livro = new Livro(livroRequestDTO);
-        livro = livroRepository.save(livro);
+        livroRepository.save(livro);
         return new LivroResponseDTO(livro);
     }
 

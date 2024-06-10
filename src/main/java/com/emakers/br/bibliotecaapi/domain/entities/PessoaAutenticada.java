@@ -38,6 +38,11 @@ public class PessoaAutenticada implements UserDetails {
     @Enumerated(EnumType.STRING)
     private PessoaAutenticadaRole role;
 
+    public PessoaAutenticada(String nomeDeUsuario, String senha){
+        this.nomeDeUsuario = nomeDeUsuario;
+        this.senha = senha;
+    }
+
     public PessoaAutenticada(Pessoa pessoa, String nomeDeUsuario, String senha, PessoaAutenticadaRole role){
         this.pessoa = pessoa;
         this.nomeDeUsuario = nomeDeUsuario;

@@ -8,7 +8,9 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.sql.Date;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 @Getter
 @Setter
@@ -35,7 +37,7 @@ public class Livro {
     private Date dataLancamento;
 
     @ManyToMany(mappedBy = "livrosEmprestimo")
-    List<Pessoa> pessoasEmprestimo;
+    List<Pessoa> pessoasEmprestimo = new ArrayList<>();;
 
     @Builder
     public Livro(LivroRequestDTO request){
@@ -45,10 +47,16 @@ public class Livro {
         this.dataLancamento = request.dataLancamento();
     }
 
-    public Livro(String nome, String autor, Integer quantidade, Date dataLancamento) {
-        this.nome = nome;
-        this.autor = autor;
-        this.quantidade = quantidade;
-        this.dataLancamento = dataLancamento;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Livro livro = (Livro) o;
+        return Objects.equals(getIdLivro(), livro.getIdLivro()) && Objects.equals(getNome(), livro.getNome()) && Objects.equals(getAutor(), livro.getAutor()) && Objects.equals(getQuantidade(), livro.getQuantidade()) && Objects.equals(getDataLancamento(), livro.getDataLancamento()) && Objects.equals(getPessoasEmprestimo(), livro.getPessoasEmprestimo());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getIdLivro(), getNome(), getAutor(), getQuantidade(), getDataLancamento(), getPessoasEmprestimo());
     }
 }

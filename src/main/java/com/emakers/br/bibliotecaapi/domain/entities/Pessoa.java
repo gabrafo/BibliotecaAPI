@@ -7,6 +7,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Getter
@@ -37,7 +38,7 @@ public class Pessoa {
         joinColumns = @JoinColumn(name = "id_pessoa"),
         inverseJoinColumns = @JoinColumn(name = "id_livro")
     )
-    List<Livro> livrosEmprestimo;
+    List<Livro> livrosEmprestimo = new ArrayList<>();;
 
     @Builder
     public Pessoa(PessoaRequestDTO request){

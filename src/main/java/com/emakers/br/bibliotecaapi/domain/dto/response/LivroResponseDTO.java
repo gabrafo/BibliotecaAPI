@@ -20,7 +20,6 @@ public record LivroResponseDTO(
         this(livro.getIdLivro(), livro.getNome(), livro.getAutor(), livro.getQuantidade(), livro.getDataLancamento(), mapPessoas(livro.getPessoasEmprestimo()));
     }
 
-
     private static List<PessoaResponseDTO> mapPessoas(List<Pessoa> pessoas) {
         if (pessoas == null) {
             return List.of(); // Retorna uma lista vazia se a lista de pessoas for nula
