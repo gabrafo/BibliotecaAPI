@@ -132,11 +132,11 @@ class PessoaServiceTest {
 
         // when
         when(mockedRepository.findById(anyLong())).thenReturn(Optional.of(p));
-        doNothing().when(mockedRepository).deleteById(anyLong());
+        doNothing().when(mockedRepository).deleteById(1L);
 
         // then
         serviceUnderTest.deletePessoaById(p.getIdPessoa());
-        verify(mockedRepository).deleteById(anyLong());
+        verify(mockedRepository).deleteById(1L);
         verify(mockedRepository).findById(p.getIdPessoa());
     }
 
