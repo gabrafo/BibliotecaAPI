@@ -39,3 +39,4 @@
 
 - Spring Security [x]
 
+- Testes unitários [x]
