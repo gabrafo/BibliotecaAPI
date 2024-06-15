@@ -1,4 +1,4 @@
-package com.emakers.br.bibliotecaapi.infra.config;
+package com.emakers.br.bibliotecaapi.infra.security;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
