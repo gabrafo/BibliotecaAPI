@@ -58,62 +58,64 @@ Após construir e executar localmente a aplicação, ou acessar a versão online
        ```
        
     - **POST:** Adicione um novo livro:
-    ```
-    POST http://localhost:8080/livro
-    ```
+        ```
+        POST http://localhost:8080/livro
+        ```
     
     Corpo da requisição (JSON):
-    ```json
-    {
-      "autor": "<string>",
-      "dataLancamento": "<dateTime>",
-      "nome": "<string>",
-      "quantidade": "<integer>"
-    }
-    ```
+        ```json
+        {
+          "autor": "<string>",
+          "dataLancamento": "<dateTime>",
+          "nome": "<string>",
+          "quantidade": "<integer>"
+        }
+        ```
     
     - **PUT:** Atualize um livro existente por ID:
-    ```
-    PUT http://localhost:8080/livro/{id}
-    ```
+        ```
+        PUT http://localhost:8080/livro/{id}
+        ```
     
     Corpo da requisição (JSON):
-    ```json
-    {
-      "autor": "<string>",
-      "dataLancamento": "<dateTime>",
-      "nome": "<string>",
-      "quantidade": "<integer>"
-    }
-    ```
+        ```json
+        {
+          "autor": "<string>",
+          "dataLancamento": "<dateTime>",
+          "nome": "<string>",
+          "quantidade": "<integer>"
+        }
+        ```
     
     - **DELETE:** Exclua um livro por ID:
-    ```
-    DELETE http://localhost:8080/livro/{id}
-    ```
+        ```
+        DELETE http://localhost:8080/livro/{id}
+        ```
     
     - **POST:** Empréstimo de um livro por ID:
-    ```
-    POST http://localhost:8080/livro/{id}/borrow
-    ```
+        ```
+        POST http://localhost:8080/livro/{id}/borrow
+        ```
     
     Corpo da requisição (JSON):
-    ```json
-    {
-      "idLivro": "<long>",
-      "idPessoa": "<long>"
-    }
-    ```
+        ```json
+        {
+          "idLivro": "<long>",
+          "idPessoa": "<long>"
+        }
+        ```
     
     - **POST**: Retorno de um livro por ID:
-    ```
-    POST http://localhost:8080/livro/{id}/return
-    ```
+        ```
+        POST http://localhost:8080/livro/{id}/return
+        ```
     
     Corpo da requisição (JSON):
-    ```json
-    {
-      "idLivro": "<long>",
-      "idPessoa": "<long>"
-    }
-    ```
+        ```json
+        {
+          "idLivro": "<long>",
+          "idPessoa": "<long>"
+        }
+        ```
+   
+2. **Pessoa:**
