@@ -7,6 +7,7 @@ import com.emakers.br.bibliotecaapi.domain.entities.PessoaAutenticada;
 import com.emakers.br.bibliotecaapi.domain.enums.PessoaAutenticadaRole;
 import jakarta.persistence.EntityManager;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -17,6 +18,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @DataJpaTest
 @ActiveProfiles("test") // Perfil de testes
+@Tag("unit")
 class PessoaAutenticadaRepositoryTest {
 
     @Autowired

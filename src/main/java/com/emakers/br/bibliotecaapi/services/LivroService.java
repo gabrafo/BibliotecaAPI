@@ -6,10 +6,12 @@ import com.emakers.br.bibliotecaapi.domain.entities.Livro;
 import com.emakers.br.bibliotecaapi.domain.entities.Pessoa;
 import com.emakers.br.bibliotecaapi.exceptions.general.EntityNotFoundException;
 import com.emakers.br.bibliotecaapi.exceptions.general.InvalidOperationException;
+import com.emakers.br.bibliotecaapi.exceptions.livro.BookAlreadyCreatedException;
 import com.emakers.br.bibliotecaapi.exceptions.livro.InvalidLoanException;
 import com.emakers.br.bibliotecaapi.exceptions.livro.InvalidQuantityException;
 import com.emakers.br.bibliotecaapi.repositories.LivroRepository;
 import com.emakers.br.bibliotecaapi.repositories.PessoaRepository;
+import jakarta.persistence.EntityExistsException;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -40,6 +42,7 @@ public class LivroService {
 
     public LivroResponseDTO createLivro(LivroRequestDTO livroRequestDTO) {
         if(livroRequestDTO.quantidade()<0) throw new InvalidQuantityException();
+        if(livroRepository.findByNome(livroRequestDTO.nome())!=null) throw new BookAlreadyCreatedException("Livro já existente no catálogo");
 
         Livro livro = new Livro(livroRequestDTO);
         livroRepository.save(livro);

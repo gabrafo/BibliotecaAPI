@@ -3,6 +3,7 @@ package com.emakers.br.bibliotecaapi.utils;
 import com.emakers.br.bibliotecaapi.domain.entities.Livro;
 import com.emakers.br.bibliotecaapi.domain.entities.Pessoa;
 import com.emakers.br.bibliotecaapi.domain.entities.PessoaAutenticada;
+import com.emakers.br.bibliotecaapi.domain.enums.PessoaAutenticadaRole;
 
 import java.sql.Date;
 
@@ -12,7 +13,13 @@ public class TestDataFactory {
         p.setIdPessoa(1L);
         p.setNome("Fulano");
         p.setCep("CEP");
-        p.setPessoaAutenticada(new PessoaAutenticada("nome_de_usuario", "senha"));
+
+        PessoaAutenticada autenticada = new PessoaAutenticada("gabrafo", "garfield");
+        autenticada.setPessoa(p); // Estabelece a relação bidirecional
+        autenticada.setRole(PessoaAutenticadaRole.ADMIN);
+
+        p.setPessoaAutenticada(autenticada);
+
         return p;
     }
 

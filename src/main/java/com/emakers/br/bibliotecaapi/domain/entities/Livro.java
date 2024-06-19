@@ -36,7 +36,7 @@ public class Livro {
     @Column(name = "data_lancamento", nullable = false)
     private Date dataLancamento;
 
-    @ManyToMany(mappedBy = "livrosEmprestimo")
+    @ManyToMany(mappedBy = "livrosEmprestimo", fetch = FetchType.EAGER)
     List<Pessoa> pessoasEmprestimo = new ArrayList<>();;
 
     @Builder
