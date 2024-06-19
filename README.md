@@ -63,7 +63,7 @@ Após construir e executar localmente a aplicação, ou acessar a versão online
         ```
     
     Corpo da requisição (JSON):
-        ```json
+        ```
         {
           "autor": "<string>",
           "dataLancamento": "<dateTime>",
@@ -78,7 +78,7 @@ Após construir e executar localmente a aplicação, ou acessar a versão online
         ```
     
     Corpo da requisição (JSON):
-        ```json
+        ```
         {
           "autor": "<string>",
           "dataLancamento": "<dateTime>",
@@ -98,7 +98,7 @@ Após construir e executar localmente a aplicação, ou acessar a versão online
         ```
     
     Corpo da requisição (JSON):
-        ```json
+        ```
         {
           "idLivro": "<long>",
           "idPessoa": "<long>"
@@ -111,11 +111,11 @@ Após construir e executar localmente a aplicação, ou acessar a versão online
         ```
     
     Corpo da requisição (JSON):
-        ```json
+        ```
         {
           "idLivro": "<long>",
           "idPessoa": "<long>"
         }
         ```
    
-2. **Pessoa:**
+3. **Pessoa:**
