@@ -63,14 +63,14 @@ Após construir e executar localmente a aplicação, ou acessar a versão online
         ```
     
     Corpo da requisição (JSON):
-        ```
+       ```json
         {
           "autor": "<string>",
           "dataLancamento": "<dateTime>",
           "nome": "<string>",
           "quantidade": "<integer>"
         }
-        ```
+       ```
     
     - **PUT:** Atualize um livro existente por ID:
         ```
