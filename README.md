@@ -61,8 +61,8 @@ Após construir e executar localmente a aplicação, ou acessar a versão online
         ```
         POST http://localhost:8080/livro
         ```
-    
-    Corpo da requisição (JSON):
+        
+        Corpo da requisição (JSON):
        ```
         {
           "autor": "<string>",
@@ -77,7 +77,7 @@ Após construir e executar localmente a aplicação, ou acessar a versão online
         PUT http://localhost:8080/livro/{id}
         ```
     
-    Corpo da requisição (JSON):
+        Corpo da requisição (JSON):
         ```
         {
           "autor": "<string>",
@@ -97,7 +97,7 @@ Após construir e executar localmente a aplicação, ou acessar a versão online
         POST http://localhost:8080/livro/{id}/borrow
         ```
     
-    Corpo da requisição (JSON):
+        Corpo da requisição (JSON):
         ```
         {
           "idLivro": "<long>",
@@ -109,13 +109,69 @@ Após construir e executar localmente a aplicação, ou acessar a versão online
         ```
         POST http://localhost:8080/livro/{id}/return
         ```
+
+2. **Pessoa:**
+   - **GET:** Recupere todas as pessoas:
+       ```
+       GET http://localhost:8080/pessoa/all
+       ```
+
+   - **GET:** Recupere uma pessoa específica por ID:
+       ```
+       GET http://localhost:8080/pessoa/{id}
+       ```
+
+   - **POST:** Adicione uma nova pessoa:
+       ```
+       POST http://localhost:8080/pessoa/auth/register
+       ```
+
+       Corpo da requisição (JSON):
+       ```
+        {
+          "cep": "<string>",
+          "nome": "<string>",
+          "pessoaAutenticadaRequestDTO": {
+            "nomeDeUsuario": "<string>",
+            "senha": "<string>"
+          },
+          "role": "USER"
+        }
+       ```
+
+   - **POST:** Autentificação (login):
+       ```
+       POST http://localhost:8080/pessoa/auth/login
+       ```
+
+       Corpo da requisição (JSON):
+       ```
+        {
+          "nomeDeUsuario": "<string>",
+          "senha": "<string>"
+        }
+       ```
+           
+    - **PUT:** Atualize uma pessoa existente por ID:
+        ```
+        PUT http://localhost:8080/pessoa/{id}
+        ```
     
-    Corpo da requisição (JSON):
+        Corpo da requisição (JSON):
         ```
         {
-          "idLivro": "<long>",
-          "idPessoa": "<long>"
+          "cep": "<string>",
+          "nome": "<string>",
+          "pessoaAutenticadaRequestDTO": {
+            "nomeDeUsuario": "<string>",
+            "senha": "<string>"
+          },
+          "role": "USER"
         }
         ```
-   
-3. **Pessoa:**
+    **OBS:** Não atualiza credenciais, somente o CEP e o nome.
+
+   - **DELETE:** Exclua uma pessoa por ID:
+       ```
+       DELETE http://localhost:8080/pessoa/{id}
+       ```
