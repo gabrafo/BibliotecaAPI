@@ -40,7 +40,7 @@ Este projeto é uma API desenvolvida como parte de um processo seletivo, no enta
     db_password=<SEU_DB_PASSWORD>
     ```
 
- ## Acessando os Endpoints na Nuvem/Localmente
+ ## Acessando os Endpoints localmente
 
  ### Passos: Testando os Endpoints da aplicação
 
